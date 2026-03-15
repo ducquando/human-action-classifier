@@ -7,7 +7,7 @@ from collections import defaultdict
 random.seed(42)
 
 # Input path for KTH sequence annotations
-INPUT_FILE = r"C:\Users\aabab\kth\archive\00sequences.txt"
+INPUT_FILE = "archive/00sequences.txt"
 OUTPUT_FILE = "data/info.csv"
 
 # --- [User Settings] ---
