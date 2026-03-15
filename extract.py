@@ -131,18 +131,6 @@ def extract_jet(L, x, y, t):
     return Lx, Ly, Lt, Lxx, Lyy, Ltt
 
 
-def extract_points(video, sigma, tau):
-    """
-    Extract interested points from a video.
-    """
-    L = gaussian_blur_3d(video, sigma, tau)
-    Lx, Ly, Lt = gradients_3d(L)
-    J = second_moment_matrix(Lx, Ly, Lt, 2*sigma, 2*tau)
-    H = harris_response(J)
-    points = detect_interest_points(H)
-
-    return points
-
 def extract_descriptors(video, sigma=1.5, tau=1.0):
     """
     Extract spatio-temporal jet descriptors from a video.
