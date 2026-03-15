@@ -5,7 +5,7 @@ import cv2
 # Configuration for file paths
 CSV_FILE = "data/info.csv"
 # 1. Update this to the actual path of your source videos
-SOURCE_VIDEO_DIR = r"C:\Users\aabab\kth\archive"
+SOURCE_VIDEO_DIR = "archive"
 
 # Directory where processed video clips will be saved
 OUTPUT_DIR = "data/transform" 
