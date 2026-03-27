@@ -2,7 +2,6 @@
 .DS_Store
 
 __pycache__/
-data/
 archive/
 kth_env/
 kth_gpu_env/
