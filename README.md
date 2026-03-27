@@ -1,8 +1,6 @@
 # human-action-classifier
-## [Project Title] KTH Action Recognition Pipeline
 
-## Project Overview
-### This repository implements a robust machine learning pipeline for recognizing human actions using the KTH Dataset. The project focuses on handling class imbalance through balanced sampling and improving model accuracy using spatial-temporal feature extraction and data augmentation.
+This repository implements a robust machine learning pipeline for recognizing human actions using the KTH Dataset. The project focuses on handling class imbalance through balanced sampling and improving model accuracy using spatial-temporal feature extraction and data augmentation.
 
 ## Environment Setup
 It is recommended to run this project within a virtual environment. Install the required dependencies using pip:
@@ -22,7 +20,7 @@ pip install numpy opencv-python scikit-learn torch matplotlib joblib
 
 ## Pipeline Execution
 ### The core logic for training and evaluation is handled within the Jupyter Notebook.
-- Main Notebook: classifier-refiner.ipynb
+- Main Notebook: `classifier-refiner.ipynb`
 - Workflow:
 1. Feature Extraction: Detects interest points using Harris Corner Detector.
 2. Codebook Construction: Creates a Visual Vocabulary using K-Means clustering ($K=800$).
