@@ -2,6 +2,7 @@ import csv
 import re
 import random
 from collections import defaultdict
+import os
 
 # Fixed seed for reproducible random sampling
 random.seed(42)
@@ -148,6 +149,7 @@ def main():
             sampled_empty_count += 1
 
     # Write final metadata to CSV
+    os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", newline="") as csvfile:
         writer = csv.writer(csvfile)
         writer.writerow([
