@@ -1,8 +1,6 @@
 # human-action-classifier
-## [Project Title] KTH Action Recognition Pipeline
 
-## Project Overview
-### This repository implements a robust machine learning pipeline for recognizing human actions using the KTH Dataset. The project focuses on handling class imbalance through balanced sampling and improving model accuracy using spatial-temporal feature extraction and data augmentation.
+This repository implements a robust machine learning pipeline for recognizing human actions using the KTH Dataset. The project focuses on handling class imbalance through balanced sampling and improving model accuracy using spatial-temporal feature extraction and data augmentation.
 
 ## Environment Setup
 It is recommended to run this project within a virtual environment. Install the required dependencies using pip:
@@ -12,7 +10,9 @@ pip install numpy opencv-python scikit-learn torch matplotlib joblib
 ```
 
 ## Data Preparation
-- Dataset Download: Download the original KTH video dataset and place the .avi files into the archive/ directory.
+- Dataset Download: 2 options:
+    - Option 1: Download the KTH dataset from [GSU Sharepoint](https://studentgsu-my.sharepoint.com/:u:/g/personal/ddo17_student_gsu_edu/IQAWdaMl6MXTTZ02_rtmUn6FAZBjVG3Xzca81dAxsE-59H0?e=M2jrwm) and unzip in this directory.
+    - Option 2: Download the KTH database (including `00sequences.txt`, `walking.zip`, `jogging.zip`, `running.zip`, `boxing.zip`, `handwaving.zip`, `handclapping.zip`) from [KTH official website](https://www.csc.kth.se/cvap/actions/), extract, and place all folders and files in the `\archive` folder.
 
 - Metadata & Sampling: Run data-info.py to parse the video metadata and perform balanced sampling to ensure equal representation across action classes.
 
@@ -20,7 +20,7 @@ pip install numpy opencv-python scikit-learn torch matplotlib joblib
 
 ## Pipeline Execution
 ### The core logic for training and evaluation is handled within the Jupyter Notebook.
-- Main Notebook: classifier-refiner.ipynb
+- Main Notebook: `classifier-refiner.ipynb`
 - Workflow:
 1. Feature Extraction: Detects interest points using Harris Corner Detector.
 2. Codebook Construction: Creates a Visual Vocabulary using K-Means clustering ($K=800$).
