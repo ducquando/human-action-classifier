@@ -6,7 +6,7 @@ This repository implements a robust machine learning pipeline for recognizing hu
 It is recommended to run this project within a virtual environment. Install the required dependencies using pip:
 
 ```bash
-pip install numpy opencv-python scikit-learn torch matplotlib joblib
+pip install numpy opencv-python scikit-learn torch matplotlib joblib notebook ipykernel
 ```
 
 ## Data Preparation
